@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button id = 'btn' onclick="alert('HTML Clicked')">press2</button>
+
+<script>
+    btn.onclick = function (){
+        alert('JS click 1')
+    }
+    btn.addEventListener('click', function clickMe(){
+        alert('JS Clicked 2')
+    });// даёт возможность вызывать несколько обработчиков на одно событие
+    btn.addEventListener('click', function clickMe(){
+        alert('JS Clicked 3')
+    });
+</script>
+</body>
+</html>

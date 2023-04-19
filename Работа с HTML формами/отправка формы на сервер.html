@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input {
+            width: 200px;
+            margin: 20px 0;
+        }
+        hr{
+            border-color: black;
+            border-width: 5px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="https://yandex.ru/search" target="_blank">
+        <label for="searxh">Поиск Яндекс:</label><br>
+        <input type="search" id="search" name="text" placeholder="Введите поисковой запрос:">
+        <button type="submit">Искать</button>
+    </form>
+    <hr>
+    <h4>Описание примера:
+
+        При введении запроса и клике на «Искать», кнопка button type="submit" отправляет данные с формы обработчику формы.
+        Как уже говорилось ранее, обработчиком формы обычно является страница сервера со скриптом для обработки введенных данных (в нашем случае — Яндекс). Обработчик формы указывается в атрибуте action.
+
+        Атрибут target отвечает за то, откроется результат отправленной формы в новой вкладке или текущем окне. Чтобы результат формы открылся в новой вкладке, используйте значение _blank.
+
+        <h2>ВАЖНО! Каждый элемент формы должен иметь атрибут name для отправки.</h2>
+    </h4>
+</body>
+</html>
